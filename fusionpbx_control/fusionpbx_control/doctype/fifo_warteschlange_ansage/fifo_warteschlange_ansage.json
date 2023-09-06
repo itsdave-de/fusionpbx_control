@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:fifo_name",
+ "creation": "2023-09-01 10:38:59.100607",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fifo_name",
+  "enable",
+  "fusionpbx",
+  "queue",
+  "audio",
+  "description",
+  "datei",
+  "date_from",
+  "date_to",
+  "priority"
+ ],
+ "fields": [
+  {
+   "fieldname": "datei",
+   "fieldtype": "Attach Image",
+   "label": "Datei"
+  },
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "G\u00fcltig von",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "G\u00fcltig bis",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fifo_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enable"
+  },
+  {
+   "fieldname": "fusionpbx",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "FusionPBX Server",
+   "options": "FusionPBX Server",
+   "reqd": 1
+  },
+  {
+   "fieldname": "queue",
+   "fieldtype": "Link",
+   "label": "Queue",
+   "options": "FIFO Queue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "audio",
+   "fieldtype": "Attach",
+   "label": "Anlage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Beschreibung"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Priority",
+   "length": 3,
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-05 15:03:05.000089",
+ "modified_by": "Administrator",
+ "module": "Fusionpbx Control",
+ "name": "Fifo Warteschlange Ansage",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "fifo_name",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,52 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"SlrAZq7Elq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">FusionPBX</span>\",\"col\":12}},{\"id\":\"BxJ5HpR66Z\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fifo Queue\",\"col\":3}},{\"id\":\"aIb0KjsjJ_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fusionpbx Server\",\"col\":3}},{\"id\":\"ys1o4kkYuI\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fifo Warteschlange Ansage\",\"col\":3}}]",
+ "creation": "2023-09-06 00:58:48.132969",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "call",
+ "idx": 1,
+ "is_hidden": 0,
+ "label": "FusionPBX",
+ "links": [],
+ "modified": "2023-09-06 01:01:57.913563",
+ "modified_by": "Administrator",
+ "module": "Fusionpbx Control",
+ "name": "FusionPBX",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 8.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Fifo Queue",
+   "link_to": "FIFO Queue",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Fusionpbx Server",
+   "link_to": "FusionPBX Server",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Enabled",
+   "label": "Fifo Warteschlange Ansage",
+   "link_to": "Fifo Warteschlange Ansage",
+   "stats_filter": "{\"enable\":[\"=\",1]}",
+   "type": "DocType"
+  }
+ ],
+ "title": "FusionPBX"
+}

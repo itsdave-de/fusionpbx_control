@@ -1,10 +1,13 @@
+from . import __version__ as app_version
+
 app_name = "fusionpbx_control"
 app_title = "Fusionpbx Control"
-app_publisher = "Luiz Costa"
-app_description = "FusionPBX server management"
-app_email = "l.costa@itsdave.de"
-app_license = "MIT"
-# required_apps = []
+app_publisher = "itsdave GmbH"
+app_description = "Connect to FusionPBX"
+app_icon = "octicon octicon-file-directory"
+app_color = "grey"
+app_email = "dev@itsdave.de"
+app_license = "GPLv3"
 
 # Includes in <head>
 # ------------------
@@ -50,15 +53,6 @@ app_license = "MIT"
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
-# Jinja
-# ----------
-
-# add methods and filters to jinja environment
-# jinja = {
-#	"methods": "fusionpbx_control.utils.jinja_methods",
-#	"filters": "fusionpbx_control.utils.jinja_filters"
-# }
-
 # Installation
 # ------------
 
@@ -71,22 +65,6 @@ app_license = "MIT"
 # before_uninstall = "fusionpbx_control.uninstall.before_uninstall"
 # after_uninstall = "fusionpbx_control.uninstall.after_uninstall"
 
-# Integration Setup
-# ------------------
-# To set up dependencies/integrations with other apps
-# Name of the app being installed is passed as an argument
-
-# before_app_install = "fusionpbx_control.utils.before_app_install"
-# after_app_install = "fusionpbx_control.utils.after_app_install"
-
-# Integration Cleanup
-# -------------------
-# To clean up dependencies/integrations with other apps
-# Name of the app being uninstalled is passed as an argument
-
-# before_app_uninstall = "fusionpbx_control.utils.before_app_uninstall"
-# after_app_uninstall = "fusionpbx_control.utils.after_app_uninstall"
-
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
@@ -98,11 +76,11 @@ app_license = "MIT"
 # Permissions evaluated in scripted ways
 
 # permission_query_conditions = {
-#	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
 #
 # has_permission = {
-#	"Event": "frappe.desk.doctype.event.event.has_permission",
+# 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
 # DocType Class
@@ -110,7 +88,7 @@ app_license = "MIT"
 # Override standard doctype classes
 
 # override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
 
 # Document Events
@@ -118,10 +96,10 @@ app_license = "MIT"
 # Hook on document methods and events
 
 # doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
+# 	"*": {
+# 		"on_update": "method",
+# 		"on_cancel": "method",
+# 		"on_trash": "method"
 #	}
 # }
 
@@ -129,21 +107,21 @@ app_license = "MIT"
 # ---------------
 
 # scheduler_events = {
-#	"all": [
-#		"fusionpbx_control.tasks.all"
-#	],
-#	"daily": [
-#		"fusionpbx_control.tasks.daily"
-#	],
-#	"hourly": [
-#		"fusionpbx_control.tasks.hourly"
-#	],
-#	"weekly": [
-#		"fusionpbx_control.tasks.weekly"
-#	],
-#	"monthly": [
-#		"fusionpbx_control.tasks.monthly"
-#	],
+# 	"all": [
+# 		"fusionpbx_control.tasks.all"
+# 	],
+# 	"daily": [
+# 		"fusionpbx_control.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"fusionpbx_control.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"fusionpbx_control.tasks.weekly"
+# 	]
+# 	"monthly": [
+# 		"fusionpbx_control.tasks.monthly"
+# 	]
 # }
 
 # Testing
@@ -155,68 +133,49 @@ app_license = "MIT"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "fusionpbx_control.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "fusionpbx_control.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-#	"Task": "fusionpbx_control.task.get_dashboard_data"
+# 	"Task": "fusionpbx_control.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
-# Ignore links to specified DocTypes when deleting documents
-# -----------------------------------------------------------
-
-# ignore_links_on_delete = ["Communication", "ToDo"]
-
-# Request Events
-# ----------------
-# before_request = ["fusionpbx_control.utils.before_request"]
-# after_request = ["fusionpbx_control.utils.after_request"]
-
-# Job Events
-# ----------
-# before_job = ["fusionpbx_control.utils.before_job"]
-# after_job = ["fusionpbx_control.utils.after_job"]
 
 # User Data Protection
 # --------------------
 
-# user_data_fields = [
-#	{
-#		"doctype": "{doctype_1}",
-#		"filter_by": "{filter_by}",
-#		"redact_fields": ["{field_1}", "{field_2}"],
-#		"partial": 1,
-#	},
-#	{
-#		"doctype": "{doctype_2}",
-#		"filter_by": "{filter_by}",
-#		"partial": 1,
-#	},
-#	{
-#		"doctype": "{doctype_3}",
-#		"strict": False,
-#	},
-#	{
-#		"doctype": "{doctype_4}"
-#	}
-# ]
+user_data_fields = [
+	{
+		"doctype": "{doctype_1}",
+		"filter_by": "{filter_by}",
+		"redact_fields": ["{field_1}", "{field_2}"],
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_2}",
+		"filter_by": "{filter_by}",
+		"partial": 1,
+	},
+	{
+		"doctype": "{doctype_3}",
+		"strict": False,
+	},
+	{
+		"doctype": "{doctype_4}"
+	}
+]
 
 # Authentication and authorization
 # --------------------------------
 
 # auth_hooks = [
-#	"fusionpbx_control.auth.validate"
+# 	"fusionpbx_control.auth.validate"
 # ]
 
-doc_events = {
-    "Fifo Warteschlange Ansage": {
-        "before_save": "fusionpbx_control.fusionpbx_control.doctype.fifo_warteschlange_ansage.fifo_warteschlange_ansage.before_save"
-    }
-}
