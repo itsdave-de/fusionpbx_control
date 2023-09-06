@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include fusionpbx_control *.css
+recursive-include fusionpbx_control *.csv
+recursive-include fusionpbx_control *.html
+recursive-include fusionpbx_control *.ico
+recursive-include fusionpbx_control *.js
+recursive-include fusionpbx_control *.json
+recursive-include fusionpbx_control *.md
+recursive-include fusionpbx_control *.png
+recursive-include fusionpbx_control *.py
+recursive-include fusionpbx_control *.svg
+recursive-include fusionpbx_control *.txt
+recursive-exclude fusionpbx_control *.pyc
